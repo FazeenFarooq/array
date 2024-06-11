@@ -1,0 +1,61 @@
+//Q1 CREATE ARRAY NAMED FRUITS THAT CONTAIN STRING ELEMENT "APPLE","BANANA","MANGO","ORANGE".
+
+let fruits:string[]=["APPLE","BANANA","MANGO","ORANGE"];
+
+//Q2 DECLARE AN ARRAY NAMED NUMBERS THAT CONTAIN NUMBER ELEMENTS 10,20,30 AND 40.
+
+let numbers:number[]=[10,20,30,40];
+
+//Q3 ACCESS THE THIRD ELEMENT OF THE FRUITS ARRAY AND ASSIGN IT TO THE VARIABLE NAME THIRD FRUIT.
+
+let thirdFruit=fruits[2];
+console.log(thirdFruit); //MANGO
+
+//Q4 CHANGE SECOND ELEMENT OF THE NUMBER ARRAY TO 25.
+
+numbers[1]=25;
+console.log(numbers);  //10,25,30,40
+
+//Q5 ADD THE ELEMENT "GRAPES" TO END OF THE FRUIT ARRAY USING METHOD.
+
+fruits.push("GRAPES");
+console.log(fruits); //"APPLE","BANANA","MANGO","ORANGE","GRAPES"
+
+//Q6 REMOVE LAST ELEMENT FROM FRUITS ARRAY USING METHOD AND ASSIGNED IT TO VARIABLE LAST FRUIT.
+
+fruits.pop()
+let lastFruit = "GRAPES";
+console.log(fruits); //"APPLE","BANANA","MANGO","ORANGE"
+console.log(lastFruit); //GRAPES
+
+//Q7 REMOVE FIRST ELEMENT FROM FRUITS ARRAY USING METHOD AND ASSIGNED IT TO VARIABLE FIRST FRUIT.
+
+fruits.shift()
+let firstFruit = "APPLE";
+console.log(fruits); //"BANANA","MANGO","ORANGE"
+console.log(firstFruit); //APPLE
+
+//Q8 ADD ELEMENT "KIWI" TO THE BEGINNING OF THE FRUITS ARRAY USING METHOD.
+
+fruits.unshift("KIWI");
+console.log(fruits); //"kIWI","BANANA","MANGO","ORANGE"
+
+//Q9 REMOVE 2 ELEMENTS FROM FRUITS ARRAY STARTING FROM INDEX 1 USING METHOD.
+
+fruits.splice(1,2);
+console.log(fruits); // "kIWI","ORANGE"
+
+//Q10 INSERT ELEMENTS "PINEAPPLE" AND "PEAR" AT INDEX 2 OF FRUITS ARRAY USING METHOD.
+
+fruits.splice(2, 0, "pineapple", "pear");
+console.log(fruits);  //'KIWI', 'ORANGE', 'pineapple', 'pear'
+
+//Q11 CREATE A NEW ARRAY NAMED CITRUSFRUITS CONTAINS FIRST TWO ELEMENTS OF THE FRUITS ARRAY USING METHOD.
+
+let citrusFruits:string[]=fruits.slice(0,2);
+console.log(citrusFruits); //'KIWI', 'ORANGE'
+
+//Q12 CREATE A NEW ARRAY NAMED LASTTWOFRUITS CONTAINS LAST TWO ELEMENTS OF THE FRUITS ARRAY USING METHOD.
+
+let lastTwoFruits:string[]=fruits.slice(-2);
+console.log(lastTwoFruits); //'pineapple' , 'pear' 
